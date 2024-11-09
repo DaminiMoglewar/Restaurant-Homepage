@@ -1,0 +1,252 @@
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+/* Reset some default styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Header styles */
+.header {
+    background-color:#f7f7f7;
+    color: #000000;
+    padding: 10px 0;
+}
+.logo img {
+    width: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff6b9a;
+}
+
+/* Hero section */
+.hero{
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+}
+.hero-content{
+    max-width: 600px;
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero p{
+font-size: 1.2 rem;
+margin-bottom: 30px;
+}
+
+.btn{
+    background-color: #c69ec6;
+    color: #0a0a0a;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition:background-color 0.3s ease;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color:  #ff6b9a;
+}
+/* Menu section */
+.menu {
+    padding: 60px 0;
+    background-color:  #f7f7f7;
+}
+.menu h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    color: #000000;
+}
+.menu-items{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.menu-item {
+width: calc(33.333% - 20px);
+margin-bottom: 30px;
+background-color: #f8f8f8;
+border-radius: 10px;
+overflow: hidden;
+transition: transform 0.3 ease;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.menu-item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.menu-item h3{
+    padding: 10px;
+    font-size: 15px;
+    color: #ff4b7a;
+}
+.menu-item p{
+    padding: 20px;
+    font-size: 10px;
+    color: #000000;
+}
+.menu-item:hover{
+    transform: translateY(-10px);
+}
+
+/* Gallery section */
+
+.gallery{
+    padding: 60px 0;
+}
+.gallery h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #000000;
+}
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap:20px    
+}
+.gallery-images img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.gallery-images img:hover{
+    transform: scale(1.05);
+}
+/* About section */
+
+.about{
+padding: 60px 0;
+background-color: #f8f8f8;
+text-align: center;
+}
+
+.about h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+.about p{
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+/* Contact section */
+.contact{
+    padding: 60px 0;
+}
+
+.contact h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.contact p {
+    max-width: 500px;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+}
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact input, .contact textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact button{
+    width: 100%;
+    padding: 10px;
+    background-color:  #c69ec6;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3 ease;
+}
+.contact button:hover{
+    background-color: #ff6b9a ;
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials a {
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.socials a img {
+    width: 24px;
+}
+
+.socials a:hover {
+    opacity: 0.7;
+}
